@@ -4,6 +4,8 @@ def delete_at(my_list=[], idx):
         return []
     elif idx < 0 or idx >= len(my_list):
         return my_list
+    elif idx == len(my_list) - 1:
+        res = my_list[:-1]
     else:
         res = my_list.copy
         j = 0
@@ -17,5 +19,5 @@ def delete_at(my_list=[], idx):
                 res[j] = my_list[i]
                 if i == len(my_list) - 1:
                     res = res[:-1]
-                j + = 1
+                j = j+1
         return res
