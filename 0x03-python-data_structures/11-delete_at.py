@@ -13,9 +13,9 @@ def delete_at(my_list=[], idx):
             elif idx == i:
                 j = i
                 continue
-            elif i == len(my_list) - 1:
-                res = res[:-1]
             else:
                 res[j] = my_list[i]
+                if i == len(my_list) - 1:
+                    res = res[:-1]
                 j + = 1
         return res
