@@ -3,8 +3,8 @@ def square_matrix_simple(matrix=[]):
     if len(matrix) == 0:
         return matrix
     else:
-        new = matrix.copy()
+        newmatrix = matrix.copy()
         for i in range(len(matrix)):
-            for j in i:
-                new[i][j] = matrix[i][j] ** 2
-        return new
+            for j in range(len(matrix[i])):
+                newmatrix[i][j] = matrix[i][j] ** 2
+        return newmatrix
