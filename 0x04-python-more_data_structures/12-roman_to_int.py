@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
              'CD': 400, 'CM': 900}
     i = 0
     num = 0
-    if roman_string is None or not isinstance(roman_string, str) :
+    if roman_string is None or not isinstance(roman_string, str):
         return 0
     else:
         while i < len(roman_string):
