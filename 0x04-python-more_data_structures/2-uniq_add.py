@@ -6,5 +6,5 @@ def uniq_add(my_list=[]):
         for i in newlist:
             res = res + i
     else:
-        return None
+        return 0
     return res
