@@ -5,6 +5,8 @@ def roman_to_int(roman_string):
              'CD': 400, 'CM': 900}
     i = 0
     num = 0
+    if roman_string = "":
+        return None
     while i < len(roman_string):
         if i+1 < len(roman_string) and roman_string[i:i+2] in roman:
             num += roman[roman_string[i:i+2]]
