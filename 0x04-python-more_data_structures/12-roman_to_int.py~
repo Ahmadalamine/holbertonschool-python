@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+def roman_to_int(roman_string):
+    roman_list = roman_string.split()
+    nb = 0
+    for i in roman_list:
+        if i == 'M':
+            nb = nb + 1000
+        elif i == 'D':
+            nb = nb + 500
+        elif i == 'C':
+            nb = nb + 100
+        elif i == 'L':
+            nb = nb + 50
+        elif i == 'X':
+            nb = nb + 10
+        elif i == 'V':
+            nb = nb + 5
+        elif i == 'I':
+            nb = nb + 1
