@@ -5,9 +5,9 @@ def roman_to_int(roman_string):
     num = 0
     while i < len(roman_string):
         if i+1<len(roman_string) and s[i:i+2] in roman:
-            num+=roman[s[i:i+2]]
-            i+=2
+            num += roman[roman_string[i:i+2]]
+            i += 2
         else:
-            num+=roman[s[i]]
-            i+=1
+            num += roman[roman_string[i]]
+            i += 1
     return num
