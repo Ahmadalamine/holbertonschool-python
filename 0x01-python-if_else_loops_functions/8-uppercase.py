@@ -5,4 +5,4 @@ def uppercase(str):
         if 96 < ord(i) < 121:
             i = ord(i) - 32
         res.append(i)
-    print("{}".format("".join(res)))
+    print("{}".format(''+join(res))
