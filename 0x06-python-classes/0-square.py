@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""this module contains one empty class."""
-
+"""this module contains one class"""
 class Square:
-    """this is an empty class."""
-
+    """this class is empty"""
     pass
