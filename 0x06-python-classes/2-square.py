@@ -1,9 +1,8 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """this module contains one class"""
 class Square:
-""" this classs contains the constructor and on
+"""this classs contains the constructor and on
 private attribute"""
-    __size = 0
     def __init__(self, size=0):
     """this functions is the const"""    
     try:
