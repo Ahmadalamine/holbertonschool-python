@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """this module contains one class"""
+
+
 class Square:
     """this classs contains the constructor and on
     private attribute"""
