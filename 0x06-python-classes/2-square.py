@@ -3,10 +3,10 @@
 
 
 class Square:
-    """this classs contains the constructor and on private attribute."""
+    """this class contains the constructor and on private attribute."""
     def __init__(self, size=0):
         self.__size = size
         if type(self.__size) != int:
             raise("size must be an integer")
-        if self.__size < 0
+        if self.__size < 0:
             raise("size must be >= 0")
