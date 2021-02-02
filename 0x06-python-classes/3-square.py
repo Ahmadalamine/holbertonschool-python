@@ -4,6 +4,8 @@
 
 class Square:
     """this class contains the constructor and on private attribute."""
+
+
     def __init__(self, size=0):
         self.__size = size
         if type(self.__size) != int:
