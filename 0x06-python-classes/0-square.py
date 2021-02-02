@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+""" this module contains one empty class """
 class Square:
-    pass  #empty block
+    """this is an empty class"""
+    pass  
