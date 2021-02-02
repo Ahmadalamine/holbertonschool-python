@@ -17,12 +17,12 @@ class Square:
         a = self.__size ** 2
         return a
 
-    def area(self):
-        a = area()
-        return self.a
-
     def size(self):
         return self.__size
 
     def size(self, value):
         self.__size = value
+        if type(self.__size) != int:
+            raise TypeError("size must be an integer")
+        if self.__size < 0:
+            raise ValueError("size must be >=0")
