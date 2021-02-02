@@ -3,12 +3,11 @@
 
 
 class Square:
-"""this classs contains the constructor and on
-private attribute"""
+    """this classs contains the constructor and on private attribute."""
 
 
     def __init__(self, size=0):
-        """this functions is the const"""    
+        """this functions is the const."""    
 
 
         try:
