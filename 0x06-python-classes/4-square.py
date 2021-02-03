@@ -26,11 +26,3 @@ class Square:
 
     def area(self):
         return self.__size ** 2
-
-
-mysquare = Square(89)
-print(mysquare.size)
-print(mysquare.area())
-mysquare.size = 33
-print(mysquare.size)
-print(mysquare.area())
