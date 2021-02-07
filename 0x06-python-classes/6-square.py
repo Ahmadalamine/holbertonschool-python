@@ -3,7 +3,7 @@
 
 
 class Square:
-    """this class contains the constructor and on private attribute."""
+    """this class contains the constructor and different methods"""
 
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
