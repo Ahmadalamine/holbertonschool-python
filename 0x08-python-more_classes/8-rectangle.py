@@ -81,8 +81,8 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         r1 = Rectangle(rect_1)
         r2 = Rectangle(rect_2)
-        a1 = rect_1.area
-        a2 = rect_2.area
+        a1 = rect_1.area()
+        a2 = rect_2.area()
         if a1 >= a2:
             return rect_1
         return rect_2
