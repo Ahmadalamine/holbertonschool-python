@@ -7,4 +7,4 @@ class BaseGeometry:
 
     def area(self):
         """foc"""
-        raise Exception("rea() is not implemented")
+        raise Exception("area() is not implemented")
