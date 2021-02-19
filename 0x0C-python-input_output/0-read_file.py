@@ -5,4 +5,4 @@
 def read_file(filename=""):
     """doc"""
     with open(filename) as f:
-        print(f.readline())
+        print(f.read())
