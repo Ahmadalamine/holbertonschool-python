@@ -1,2 +1,2 @@
 --show table
-DESCRIBE first_table;
+DESC first_table;
