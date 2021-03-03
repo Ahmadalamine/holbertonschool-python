@@ -1,27 +1,27 @@
 #!/usr/bin/python3
-"""doc"""
+
+"""
+validUTF8 Module
+"""
 
 
 def validUTF8(data):
-    """doc"""
-    expected_length = 0
-    for i in data:
-        if i & 256 == 0:
-            expected_length = 1
-        elif i & 192 == 192:
-            expected_length = 2
-        elif i & 224 == 224:
-            expected_length = 3
-        elif i & 240 == 240:
-            expected_length = 4
+    """Check if for valid UTF-8 encoding"""
+
+    n_bytes = 0
+    for x in data:
+        bin_rep = format(x, '#010b')[-8:]
+        if n_bytes == 0:
+            for bit in bin_rep:
+                if bit == '0':
+                    break
+                n_bytes += 1
+            if n_bytes == 0:
+                continue
+            if n_bytes == 1 or n_bytes > 4:
+                return False
         else:
-            return False
-    expected_length -= 1
-    while expected_length > 0:
-        i += 1
-        if i >= len(data):
-            return False
-        if bin(data[i]) & 0b11000000 != 0b10000000:
-            return False
-        expected_length -= 1
-    return True
+            if not (bin_rep[0] == '1' and bin_rep[1] == '0'):
+                return False
+        n_bytes -= 1
+    return n_bytes == 0
