@@ -1,2 +1,2 @@
 --show table
-EXPLAINE first_table;
+SHOW create first_table;
