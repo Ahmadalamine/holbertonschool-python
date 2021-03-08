@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    newstr = ''
+    n = ""
+
     for i in my_string:
-        if i == 'c' or i == 'C':
-            continue
-        newstr = newstr + i
-    return newstr
+        if ord(i) != 67 and ord(i) != 99:
+            n = n + i
+
+    return(n)
