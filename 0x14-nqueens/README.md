@@ -1,1 +1,1 @@
-nqueens
+0x14-nqueens
