@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""doc"""
+"""contain class BaseGeometry"""
 
 
 class BaseGeometry:
-    """doc"""
-
+    """contain 2 functions"""
     def area(self):
-        """foc"""
+        """define area"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """doc"""
-        if type(value) is not int:
-            raise TypeError("<name> must be an integer")
+        """check value if integer type"""
+        self.name = name
+        self.value = value
+
+        if type(value).__name__ != int.__name__:
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError("<name> must be greater than 0")
+            raise ValueError("{} must be greater than 0".format(name))
