@@ -1,19 +1,23 @@
 #!/usr/bin/python3
-"""doc"""
+"""
+    0-lockboxes.py
+    Module that defines a function called canUnlockAll
+"""
 
 
 def canUnlockAll(boxes):
-    """d"""
-
-    keys = boxes[0].copy()
-    for i in keys:
-        try:
-            for j in boxes[i]:
-                if j not in keys:
-                    keys.append(j)
-        except IndexError:
-            return False
-    for i in range(1, len(boxes)):
-        if i not in keys:
-            return False
-    return True
+    """
+    Function that checks if all boxes can be unlocked
+    Args:
+        boxes (list): list of boxes list
+    Note:
+        All keys will be positive integers
+        A key with the same number as a box opens that box
+        Return True if all boxes can be opened, else return False
+    """
+    boxes_keys = [0]
+    for box_key in boxes_keys:
+        for key in boxes[box_key]:
+            if key < len(boxes) and key not in boxes_keys:
+                boxes_keys.append(key)
+    return len(boxes_keys) == len(boxes)
