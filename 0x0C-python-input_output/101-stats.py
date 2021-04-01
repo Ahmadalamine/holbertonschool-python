@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 """module"""
 
-
 import sys
-
 
 x = 0
 arg = 0
@@ -23,7 +20,6 @@ for line in sys.stdin:
                 print('{}: {}'.format(k[0], k[1]))
     except KeyboardInterrupt:
         print("KeyboardInterrupt")
-=======
 
 """
 101-stats Module
@@ -38,11 +34,13 @@ if __name__ == '__main__':
     stats = {k: 0 for k in valid_codes}
     counter = 0
 
+
     def print_stats(stats: dict, file_size: int) -> None:
         print("File size: {:d}".format(file_size))
         for k, v in sorted(stats.items()):
             if v:
                 print("{}: {}".format(k, v))
+
 
     try:
         for l in sys.stdin:
