@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-"""doc"""
+"""read based on nb lines"""
 
 
 def read_lines(filename="", nb_lines=0):
-    """doc"""
-    line = ""
-    with open(filename) as f:
-        if nb_lines <= 0 or nb_lines >= len(f.readlines()):
-            en_file = f.read()
-            print(en_file, end="")
-        else:
-            while nb_lines:
-                line = f.readline()
-                print(line, end="")
-                nb_lines -= 1
+    """ Read the file acording to number of required lines """
+    a = 0
+    with open(filename, encoding="utf-8") as reader:
+        for line in reader:
+            print(line, end="")
+            if a == (nb_lines - 1):
+                break
+            a += 1
